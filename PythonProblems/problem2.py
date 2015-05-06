@@ -31,11 +31,16 @@ def find_dup(data):
         if data.count(i) == 1:
             #print i
             new_data.remove(i)
-            pass
     return new_data
 
 e = [10, 20, 30, 10]
-print find_dup(c)
+print find_dup(d)
+
+
+# More elegant solution:
+
+def find_dup2(data):
+    return [x for x in data if data.count(x) > 1]
 
 
 

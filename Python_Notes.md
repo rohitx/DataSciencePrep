@@ -1,10 +1,10 @@
 ## Table of Contents
 
 1. [__Data Structures__](#Data Structures)
- 1. [List Methods](#List-Methods)
- 2. [Sets](#Sets)
-2. [__Sets__](#Sets)
-3. [__Python Classes__](#Python-Classes)
+ 1. [List Methods](#list-methods)
+ 2. [Set Methods](#set-methods)
+2. [__Set Methods__](#Sets)
+3. [__Python Classes__](#python-classes)
 
 
 ## List Methods

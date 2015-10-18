@@ -1,16 +1,20 @@
 ## Table of Contents
 
 1. [__Data Structures__](#Data Structures)
- 1. [Lists](#Lists)
+ 1. [List Methods](#List-Methods)
  2. [Sets](#Sets)
 2. [__Sets__](#Sets)
-3. [__Python Classes__](#Python Classes)
+3. [__Python Classes__](#Python-Classes)
 
 
+## List Methods
+A *list* is a mutable ordered sequence of items. The items of a list are arbitrary objects and may be of different types. Lists are defined by square brackets and each element is separated by a comma.
 
+Let's look at methods associated with lists
 
+![Lists](figures/figure.jpg)
 
-# Python Classes
+## Python Classes
 
 Python is an object-oriented programming languge, which means it manipulates programming constructs called **objects**. You can think of an object as a single data structure that contains data as well as functions; functions of objects are called **methods**.
 

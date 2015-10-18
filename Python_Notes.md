@@ -14,6 +14,15 @@ Let's look at methods associated with lists
 
 ![Lists](figures/figure.jpg)
 
+## Set Methods
+In Python `set` and `frozenset` represent arbitrarily unordered collection of unique items. Set objects provide several methods as shown below.
+
+![Sets](figures/figure-1.jpg)
+![Sets](figures/figure-2.jpg)
+
+>All mutating methods of set objects, except `pop`, return None
+
+
 ## Python Classes
 
 Python is an object-oriented programming languge, which means it manipulates programming constructs called **objects**. You can think of an object as a single data structure that contains data as well as functions; functions of objects are called **methods**.

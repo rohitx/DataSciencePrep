@@ -1,9 +1,9 @@
 ## Table of Contents
 
 1. [__Data Structures__](#Data Structures)
- 1. [List Methods](#list-methods)
- 2. [Set Methods](#set-methods)
- 3. [Dictionary Methods](#dictionary-methods)
+ 1. [__List Methods__](#list-methods)
+ 2. [__Set Methods__](#set-methods)
+ 3. [__Dictionary Methods__](#dictionary-methods)
 2. [__Control Flow Statements__](#control-flow-statements)
  1. [__The if Statement__](#the-if-statement)
  2. [__The while Statement__](#the-while-statement)

@@ -3,7 +3,15 @@
 1. [__Data Structures__](#Data Structures)
  1. [List Methods](#list-methods)
  2. [Set Methods](#set-methods)
-2. [__Set Methods__](#Sets)
+ 3. [Dictionary Methods](#dictionary-methods)
+2. [__Control Flow Statements__](#control-flow-statements)
+ 1. [__The if Statement__](#the-if-statement)
+ 2. [__The while Statement__](#the-while-statement)
+ 3. [__The for Statement__](#the-for-statement)
+ 4. [__The break Statement__](#the-break-statement)
+ 5. [__The continue Statement__](#the-continue-statement)
+ 6. [__The pass Statement__](#the-pass-statement)
+ 7. [__The for-else Statement__](#the-for-else-statement)
 3. [__Python Classes__](#python-classes)
 
 
@@ -20,8 +28,100 @@ In Python `set` and `frozenset` represent arbitrarily unordered collection of un
 ![Sets](figures/figure-1.jpg)
 ![Sets](figures/figure-2.jpg)
 
->All mutating methods of set objects, except `pop`, return None
+>**All mutating methods of set objects, except `pop`, return None**
 
+## Dictionary Methods
+
+A *mapping* is an arbitrary collection of objcts indexed by nearly arbitrary values called *keys*. Mappings are mutable and, unlike sequences, are *not* ordered.
+
+Python provides a single built-in mapping type, the dictionary type. The dictionary in python consists of key-value pairs. Python provides various methods associated with dictionaries.
+
+![dictionary](figures/figure-3.jpg)
+![dictionary](figures/figure-4.jpg)
+
+## Control Flow Statements
+
+A program's control flow is the order in which the program's code executes. The control flow of a Python program is regulated by conditional statements, loops, and function calls.
+
+### The if Statement
+The `if` statement also with if-else statement has the following form:
+
+```python
+if expression:
+    statement(s)
+elif expression:
+    statements(s)
+else:
+    statement(s)
+```
+
+>**There can be unlimited number of elif statements after if and before else.**
+
+### The while Statement
+The `while` statement in Python supports repeated executions of a statement or block of statements that are controlled by a conditional expression. The general syntax is the following:
+
+```python
+# Form 1:
+count = 0
+while count < 10:
+    do something
+    count += 1
+
+# Form 2:
+while True:
+    message = raw_input("Enter a number: ")
+    if message == 'q':
+        print "I am done"
+        break
+```
+
+The *form 2* can go on infinitely under the user decides to quit while the *form 1* only runs for a specific number of times.
+
+### The for Statement
+The `for` statement in Python supports repeated execution of a statement, or block of statements, controlled by an iterable expression. Here's how a for statement looks like:
+
+```python
+colors = ['yellow', 'pink', 'blue', 'green']
+
+for color in colors:
+    print color
+    print len(color)
+
+#If you have a dictionary, you can run through the key-value pairs as follows:
+
+for key, value in d.iteritems():
+    print key, value
+    if key != value:
+        del d[key]
+```
+
+### The break Statement
+The break statement is allowed only inside a loop body. When `break` executes, the loop terminates. If a loop is nested inside other loops, the `break` in it terminates only the innermost nested loop. We have already seen an example of `break` inside a `while` loop.
+
+### The continue Statement
+The `continue` statement is allowed only inside a loop body. When `continue` executes, the current iteration of the loop body terminates, and executing continues with the next iteration of the loop. Here's an example:
+
+```python
+for x in xrange(10):
+    if x%2 == 0:
+        continue
+    print x
+```
+This loop will only print odd numbers as the if statement will set things to continue.
+
+### The pass Statement
+The body of a Python compound statement cannot be empty; it must always contain at least one statement. You can use a `pass` statement, which performs no action, as a placeholder when a statement is syntactically required but you have nothing to do.
+
+The for-else Statement
+`while` and `for` statements may optionally have a trailing `else` clause. The statement or block under that `else` executes when the loop terminates naturally but not when the loop terminates prematurely. For example:
+
+```python
+for num in xrange(10):
+    if num == 5: break
+else:
+    print("executed all the numbers")
+```
+In this case, the else statement will not print as xrange(10) has the number 5 in it.
 
 ## Python Classes
 

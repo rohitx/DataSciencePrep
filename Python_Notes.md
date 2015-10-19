@@ -244,3 +244,21 @@ class PartTimeEmployee(Employee):
 milton = PartTimeEmployee('Ada')
 print milton.full_time_wage(10)
 ```
+
+## Tips, Tricks, and Explanations in Python
+
+1. What does ** and * do for Python parameters? For example we have:
+```python
+def get(self, *a, **kw)
+```
+If the form *identifier is present, it is initialized to a tuple receiving any excess positional parameters, defaulting to the empty tuple. If the form `**identifier` is present, it is initialized to a new dictionary receiving any excess keyword arguments, defaulting to a new empty dictionary.
+
+Basically, this means that for lists, tuples, and sets you would use one * and for dictionary you would use **. As an example, if you want to apply set intersections over all of the sets in a list of sets, you would do the following:
+
+```python
+set.intersection(*list_of_sets)
+```
+
+2. 
+
+

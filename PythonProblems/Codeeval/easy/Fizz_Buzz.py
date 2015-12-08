@@ -19,7 +19,8 @@ def fizzbuzz(filename):
                 result.append('B')
             else:
                 result.append(num)
-    return result
+        print result
+    return ""
 
 if __name__ == '__main__':
     print fizzbuzz('fizz_buzz.txt')
